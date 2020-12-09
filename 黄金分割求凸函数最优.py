@@ -1,14 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def fun(x):
-    y = x*x
+    y = 2*x*x-5*x+1
     return y
-
-
-xigema = 0.001
-a = -2
-b = 2
+xigema = 1
+a = 1
+b = 6
 
 n = 0
 while(abs(a-b) > xigema):
@@ -18,15 +17,16 @@ while(abs(a-b) > xigema):
     y1 = fun(x1)
     y2 = fun(x2)
     if(y1 < y2):
-        b=x2
-        x2=x1
-    if(y1==y2):
-        a=x1
-        b=x2
-    if(y1>y2):
-        a=x1
-        x1=x2
+        b = x2
+        x2 = x1
+    if(y1 == y2):
+        a = x1
+        b = x2
+    if(y1 > y2):
+        a = x1
+        x1 = x2
 
 
-xx=(a+b)/2
+xx = (a+b)/2
 print(xx)
+print(n)
