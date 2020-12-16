@@ -1,11 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def fun(x):
     y = 2*x*x-5*x+1
     return y
-xigema = 1
+xigema = 0.00001
 a = 1
 b = 6
 
